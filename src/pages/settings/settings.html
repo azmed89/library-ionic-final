@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons start>
+      <button ion-button icon-only (click)="onToggleMenu()">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <ion-title>Settings</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>Données</ion-card-header>
+    <ion-card-content>
+      <button ion-button block outline (click)="onSaveAllData()">Enregistrer</button>
+      <button ion-button block outline (click)="onFetchAllData()">Récupérer</button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-footer padding>
+  <p>Bas de page</p>
+</ion-footer>
